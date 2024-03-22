@@ -1,0 +1,15 @@
+Required python version >= 3.10
+Required a Database preferable postgresSQL
+
+For Migration:
+    Steps:
+        1. Please change the 'SQLALCHEMY_DATABASE_URI' variable value present in app.py to your local database url
+        2. Run following commands to create tables on your local database / any new database:
+            flask db init: will create migration folder
+            flask db migrate: create sql commands in version
+            flask db upgrade: execute command to make changes in database
+
+Run the code:
+	1. open cmd/terminal on the project directory and run the following command:
+		python app.py
+
